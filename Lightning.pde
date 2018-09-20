@@ -6,18 +6,14 @@ int endY = 150;
 void setup()
 {
   size(300,300);
-  strokeWeight(4);
+  strokeWeight(1);
   background(137,137,137);
-  
 }
 void draw()
 {
 noStroke();
 sith();
-int x = (int)(Math.random()*256);
-int y = (int)(Math.random()*256);
-int z = (int)(Math.random()*256);
-stroke(x,y,z);
+stroke(39,3,255);
 while (endX < 300)
 {
   endX = startX + (int)(Math.random()*10);
@@ -29,8 +25,12 @@ while (endX < 300)
 }
 void sith()
 {
+  fill(0,0,0);
+  triangle(25,120,35,200,15,200);
+  quad(25,155,50,150,50,151,25,156);
+  ellipse(25,125,24,24);
   fill(245,240,240);
-  ellipse(25,125,20,20);
+  ellipse(25,125,18,18);
 }
 void mousePressed()
 {
